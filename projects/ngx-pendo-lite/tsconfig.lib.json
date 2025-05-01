@@ -1,0 +1,31 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+      "outDir": "../../dist/out-tsc/lib",
+      "declaration": true,
+      "declarationMap": true,
+      "inlineSources": true,
+      "types": [],
+      "lib": [
+        "dom",
+        "es2022"
+      ],
+      "target": "ES2022",
+      "module": "ES2022",
+      "useDefineForClassFields": false
+    },
+    "angularCompilerOptions": {
+      "skipTemplateCodegen": true,
+      "strictMetadataEmit": true,
+      "enableResourceInlining": true,
+      "strictInjectionParameters": true,
+      "strictInputAccessModifiers": true,
+      "strictTemplates": true,
+      "compilationMode": "partial"
+    },
+    "exclude": [
+      "src/test.ts",
+      "**/*.spec.ts",
+      "**/*.test.ts"
+    ]
+  }

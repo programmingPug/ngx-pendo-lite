@@ -1,0 +1,47 @@
+{
+  "name": "ngx-pendo-lite",
+  "version": "1.0.0",
+  "description": "Angular wrapper for Pendo.io analytics integration",
+  "author": "Christopher Koch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/programmingPug/ngx-pendo-lite"
+  },
+  "keywords": [
+    "angular",
+    "pendo",
+    "analytics",
+    "tracking",
+    "pendo.io"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/programmingPug/ngx-pendo-lite/issues"
+  },
+  "homepage": "https://github.com/programmingPug/ngx-pendo-lite#readme",
+  "peerDependencies": {
+    "@angular/common": ">=12.0.0",
+    "@angular/core": ">=12.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-pendo.mjs",
+      "esm": "./esm2022/ngx-pendo.mjs",
+      "default": "./fesm2022/ngx-pendo.mjs"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    }
+  },
+  "module": "fesm2022/ngx-pendo.mjs",
+  "typings": "index.d.ts",
+  "type": "module"
+}

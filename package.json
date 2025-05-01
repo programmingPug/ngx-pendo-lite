@@ -1,0 +1,47 @@
+{
+  "name": "ngx-pendo-lite-workspace",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "build:lib": "ng build ngx-pendo-lite",
+    "test:lib": "ng test ngx-pendo-lite",
+    "lint:lib": "ng lint ngx-pendo-lite",
+    "publish:lib": "cd dist/ngx-pendo-lite && npm publish",
+    "publish:lib:dry": "cd dist/ngx-pendo-lite && npm publish --dry-run",
+    "version:patch": "cd projects/ngx-pendo-lite && npm version patch",
+    "version:minor": "cd projects/ngx-pendo-lite && npm version minor",
+    "version:major": "cd projects/ngx-pendo-lite && npm version major"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.1.0",
+    "@angular/common": "^17.1.0",
+    "@angular/compiler": "^17.1.0",
+    "@angular/core": "^17.1.0",
+    "@angular/forms": "^17.1.0",
+    "@angular/platform-browser": "^17.1.0",
+    "@angular/platform-browser-dynamic": "^17.1.0",
+    "@angular/router": "^17.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.5.0",
+    "zone.js": "~0.14.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.1.0",
+    "@angular/cli": "^17.1.0",
+    "@angular/compiler-cli": "^17.1.0",
+    "ng-packagr": "^17.1.0",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.3.3"
+  }
+}
